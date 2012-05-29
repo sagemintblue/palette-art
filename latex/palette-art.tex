@@ -35,8 +35,8 @@
 
   % draw swatch
   \path let
-  \p1 = ($\lw*(#1.east)-\lw*(#1.west)$),
-  \p2 = ($\lh*(#1.north)-\lh*(#1.south)$)
+  \p1 = ($\lw*(#1.east)-\lw*(#1.west)+(1pt,0)$),
+  \p2 = ($\lh*(#1.north)-\lh*(#1.south)+(0,1pt)$)
   in node[
   swatch=#4#5p#6,
   minimum width=\x1,
